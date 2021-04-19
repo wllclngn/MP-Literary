@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.home,
+.info {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+a:link {
+  color: #008081;
+}
+a:visited {
+  color: #6A64FF;
+}
+a:hover {
+  color: #787878;
+}
+
+body {
+  font-size: 16px;
+  background-image: url("./images/sony-jag.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover cover;
+  background-attachment: fixed;
+  background-color: #181818;
+  color: #000000;
+  font-family: Noto Sans SC;
+  margin: 0
+}
+
+/* 
+
+CUSTOM BODY TAGES
+// HTML CODE: <body class="body-id">
+
+.body-id {
+  font-size: 16px;
+  background-image: url("./images/sony-jag.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover cover;
+  background-attachment: fixed;
+  background-color: #181818;
+  color: #000000;
+  font-family: Noto Sans SC;
+  margin: 0
+}
+
+*/
+
+.column {
+  border-radius: 5px;
+  background-color: #E7E7E7;
+  text-align: left;
+  padding: 2em;
+  width: 45%;
+  margin: auto;
+}
+
+img {
+  max-width: 35%;
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin: auto !important;
+  text-align: center;
+}
+
+.nav {
+  background-color: #181818;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  float: left;
+  background-color: #282828;
+  color: #E7E7E7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #888888;
+  color: #E7E7E7;
+}
+
+.nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.footer {
+  margin: 0px;
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #181818;
+  color: #E7E7E7;
+  text-align: center;
+}
+
+#message {
+  margin: auto;
+  min-width: 500px;
+}
+
+@media screen and (max-width: 767px) { 
+  img {
+    max-width: 70%;
+    height: auto;
+  }
+  .column {
+    width: 100%;
+    text-align: left;
+  }
+  #message {
+    min-width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  img {
+    max-width: 70%;
+    height: auto;
+  }
+  .column {
+    width: 90%;
+    text-align: left;
+  }
+  #message {
+    min-width: 80%;
+    margin: auto;
+  }
+}

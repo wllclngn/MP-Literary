@@ -1,0 +1,15 @@
+# MP CRAWLER
+
+# Google
+User-agent: Googlebot-Image
+Disallow: /images
+Disallow: /images/
+
+# All else
+User-agent: *
+Disallow: /images
+Disallow: /images/
+
+# FUTURE POSSIBILITIES
+# Disallow: /*.pdf$
+# Disallow: /products/*?
